@@ -333,35 +333,7 @@ public class MacroBoard {
 		}else if(getMicroBoard().checkWin(macro*9) == 2){
 			getMacroBoard()[macro] = 2;
 		}
-		/*// check if WIN
-		// sorok
-		if((getMacroBoard()[0]== 1 && getMacroBoard()[1]==1 && getMacroBoard()[2] == 1) || getMacroBoard()[0]+getMacroBoard()[1]+getMacroBoard()[2] == 6){
-			return false;
-		}
-		else if((getMacroBoard()[3]== 1 && getMacroBoard()[4]==1 && getMacroBoard()[5] == 1) || getMacroBoard()[3]+getMacroBoard()[4]+getMacroBoard()[5] == 6){
-			return false;
-		}
-		else if((getMacroBoard()[6]== 1 && getMacroBoard()[7]==1 && getMacroBoard()[8] == 1) || getMacroBoard()[6]+getMacroBoard()[7]+getMacroBoard()[8] == 6){
-			return false;
-		}
-		// oszlopok
-		if((getMacroBoard()[0]== 1 && getMacroBoard()[3]==1 && getMacroBoard()[6] == 1) || getMacroBoard()[0]+getMacroBoard()[3]+getMacroBoard()[6] == 6){
-			return false;		
-		}
-		else if((getMacroBoard()[1]== 1 && getMacroBoard()[4]==1 && getMacroBoard()[7] == 1) || getMacroBoard()[1]+getMacroBoard()[4]+getMacroBoard()[7] == 6){
-			return false;		
-		}
-		else if((getMacroBoard()[2]== 1 && getMacroBoard()[5]==1 && getMacroBoard()[8] == 1) || getMacroBoard()[2]+getMacroBoard()[5]+getMacroBoard()[8] == 6){
-			return false;
-		}
-		// átlók
-		if((getMacroBoard()[0]== 1 && getMacroBoard()[4]==1 && getMacroBoard()[8] == 1) || getMacroBoard()[0]+getMacroBoard()[4]+getMacroBoard()[8] == 6){
-			return false;
-		}
-		else if((getMacroBoard()[2]== 1 && getMacroBoard()[4]==1 && getMacroBoard()[6] == 1) || getMacroBoard()[2]+getMacroBoard()[4]+getMacroBoard()[6] == 6){
-			return false;
-		}
-*/
+
 		if(getMacroBoard()[a%9] > 0){
 			for(int i=0; i<9; ++i){
 				if(getMacroBoard()[i] < 1){
